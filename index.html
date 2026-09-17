@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bibek — PHP Developer</title>
+    <meta name="description" content="Bibek, a PHP developer building custom backends for small businesses in Nepal." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style.css" />
+
+</head>
+<body>
+
+<div class="mobile-bar">
+    <span class="mobile-bar__name">Bibek</span>
+    <button id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+</div>
+
+<div class="layout">
+
+    <aside class="spine" id="spine">
+        <div class="identity">
+            <div class="identity__image">
+                <span class="identity__initial">B</span>
+                <span class="identity__dot"></span>
+            </div>
+            <div class="identity__info">
+                <span class="identity__number">01 — PROFILE</span>
+                <h1>Bibek</h1>
+                <p>PHP Developer</p>
+            </div>
+        </div>
+
+        <nav class="spine__nav" aria-label="Section navigation">
+            <a href="#about" class="nav-link" data-section="about">
+                <span class="nav__index">01</span><span class="nav__text">About</span><span class="nav__arrow">↗</span>
+            </a>
+            <a href="#skills" class="nav-link" data-section="skills">
+                <span class="nav__index">02</span><span class="nav__text">Skills</span><span class="nav__arrow">↗</span>
+            </a>
+            <a href="#projects" class="nav-link" data-section="projects">
+                <span class="nav__index">03</span><span class="nav__text">Projects</span><span class="nav__arrow">↗</span>
+            </a>
+            <a href="#contact" class="nav-link" data-section="contact">
+                <span class="nav__index">04</span><span class="nav__text">Contact</span><span class="nav__arrow">↗</span>
+            </a>
+        </nav>
+
+        <div class="identity__footer">
+            <span>BHARATPUR, NEPAL</span>
+            <div class="identity__links">
+                <a href="#" target="_blank" rel="noopener">GitHub</a>
+                <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </aside>
+
+    <main class="content">
+
+        <section class="intro" id="intro">
+            <p class="eyebrow">Freelance developer, Nepal</p>
+            <h1>I build backends that don't need a <strong>framework</strong> to feel solid.</h1>
+            <p class="lead">
+                Third-year Agriculture student in Chitwan, and a freelance PHP developer on the side.
+                I write plain PHP and MySQL by hand — no unnecessary dependencies — for people who
+                just need something that actually works.
+            </p>
+        </section>
+
+        <section id="about">
+            <div class="section-heading">
+                <h2>About</h2>
+                <span class="section-number">01 / 04</span>
+            </div>
+
+            <div class="about__text">
+                <p>
+                    I'm currently studying BSc Agriculture at AFU Rampur, but most of my hours outside
+                    class go into freelance PHP work. I started by teaching myself the language from the
+                    ground up, and now build custom backends — booking systems, admin panels, small
+                    business tools — without leaning on a framework unless the project actually calls
+                    for one.
+                </p>
+                <p>
+                    Longer term, I'm working toward a career in penetration testing, starting with HTB
+                    Academy and working up to OSCP. Understanding how systems are built properly is part
+                    of why I care about writing clean backend code now.
+                </p>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat__value">3rd</span>
+                    <span class="stat__label">Year, BSc Agriculture</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__value">PHP</span>
+                    <span class="stat__label">Primary language</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__value">Nepal</span>
+                    <span class="stat__label">Based in Bharatpur</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="section-heading">
+                <h2>Skills</h2>
+                <span class="section-number">02 / 04</span>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>PHP<span class="skill-note">Custom MVC, PDO, no framework unless it's warranted</span></li>
+                        <li>MySQL<span class="skill-note">Schema design, transactions, query optimization</span></li>
+                        <li>REST APIs<span class="skill-note">Building and consuming JSON endpoints</span></li>
+                        <li>Composer / PSR-4<span class="skill-note">Autoloading, dependency injection</span></li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML &amp; CSS<span class="skill-note">Responsive, no framework overhead</span></li>
+                        <li>JavaScript<span class="skill-note">DOM interactivity, fetch-based data flows</span></li>
+                        <li>WordPress<span class="skill-note">Secondary — fast turnaround client sites</span></li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git<span class="skill-note">Version control, deploy workflows</span></li>
+                        <li>XAMPP<span class="skill-note">Local development environment</span></li>
+                        <li>FTP / shared hosting<span class="skill-note">Deploying client sites</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-heading">
+                <h2>Projects</h2>
+                <span class="section-number">03 / 04</span>
+            </div>
+
+            <article class="project">
+                <div class="project__image">
+                    <span class="project__glyph">NS</span>
+                </div>
+                <div class="project__content">
+                    <h3>NepalStay</h3>
+                    <p>
+                        A full hotel booking platform built from scratch — custom MVC architecture, a PDO
+                        database layer, and a booking system with transaction-based double-booking
+                        protection. Handles room listings, guest bookings, and an admin panel for
+                        managing inventory.
+                    </p>
+                    <div class="project__tags">
+                        <span>PHP</span><span>MySQL</span><span>Custom MVC</span><span>JavaScript</span>
+                    </div>
+                    <div class="project__links">
+                        <a href="#" target="_blank" rel="noopener">View live demo</a>
+                        <a href="#" target="_blank" rel="noopener">Source code</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="contact">
+            <div class="section-heading">
+                <h2>Contact</h2>
+                <span class="section-number">04 / 04</span>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-copy">
+                    <h3>Have a project that needs a solid backend?</h3>
+                    <p>Send a message and I'll get back to you — usually within a day or two.</p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit"><span>Send message</span></button>
+                    <p class="form-status" id="formStatus" role="status"></p>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>© <span id="year"></span> Bibek. Built with plain HTML, CSS, and JS.</p>
+            <p><a href="#intro">Back to top ↑</a></p>
+        </footer>
+
+    </main>
+</div>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const spine = document.getElementById('spine');
+    navToggle.addEventListener('click', () => {
+        const isOpen = spine.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            spine.classList.remove('is-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Active section highlight
+    const sections = ['about', 'skills', 'projects', 'contact'].map(id => document.getElementById(id));
+    const navLinks = document.querySelectorAll('.nav-link');
+    const setActive = (id) => {
+        navLinks.forEach(l => l.classList.toggle('is-active', l.dataset.section === id));
+    };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) setActive(entry.target.id);
+        });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    sections.forEach(s => s && observer.observe(s));
+
+    // Contact form (front-end only demo — no backend endpoint configured)
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const status = document.getElementById('formStatus');
+        status.textContent = 'Thanks — this form is a front-end demo, so nothing was sent yet. Wire it up to your backend or a form service to go live.';
+        status.classList.add('is-success');
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
