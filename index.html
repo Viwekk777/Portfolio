@@ -3,285 +3,804 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Bibek — PHP Developer</title>
-    <meta name="description" content="Bibek, a PHP developer building custom backends for small businesses in Nepal." />
+
+    <meta
+            name="description"
+            content="Bibek, a PHP developer building custom backends for small businesses in Nepal."
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link
+            href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="Style.css" />
 </head>
+
 <body>
 
 <div class="mobile-bar">
     <span class="mobile-bar__name">Bibek</span>
-    <button id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
+
+    <button
+            id="navToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
     </button>
 </div>
 
+
 <div class="layout">
 
+    <!-- SIDEBAR -->
     <aside class="spine" id="spine">
+
         <div class="identity">
+
             <div class="identity__image">
-
-                <img class="identity__logo" src="/images/me.jpeg" alt="Bibek logo" />
-
+                <img
+                        class="identity__logo"
+                        src="/images/me.jpeg"
+                        alt="Bibek"
+                />
             </div>
+
             <div class="identity__info">
                 <span class="identity__number">01 — PROFILE</span>
                 <h1>Bibek</h1>
                 <p>PHP Developer</p>
             </div>
+
         </div>
 
+
+        <!-- NAVIGATION -->
         <nav class="spine__nav" aria-label="Section navigation">
-            <a href="#about" class="nav-link" data-section="about">
-                <span class="nav__index">01</span><span class="nav__text">About</span><span class="nav__arrow">↗</span>
+
+            <a
+                    href="#about"
+                    class="nav-link"
+                    data-section="about"
+            >
+                <span class="nav__index">01</span>
+                <span class="nav__text">About</span>
+                <span class="nav__arrow">↗</span>
             </a>
-            <a href="#skills" class="nav-link" data-section="skills">
-                <span class="nav__index">02</span><span class="nav__text">Skills</span><span class="nav__arrow">↗</span>
+
+            <a
+                    href="#skills"
+                    class="nav-link"
+                    data-section="skills"
+            >
+                <span class="nav__index">02</span>
+                <span class="nav__text">Skills</span>
+                <span class="nav__arrow">↗</span>
             </a>
-            <a href="#projects" class="nav-link" data-section="projects">
-                <span class="nav__index">03</span><span class="nav__text">Projects</span><span class="nav__arrow">↗</span>
+
+            <a
+                    href="#projects"
+                    class="nav-link"
+                    data-section="projects"
+            >
+                <span class="nav__index">03</span>
+                <span class="nav__text">Projects</span>
+                <span class="nav__arrow">↗</span>
             </a>
-            <a href="#contact" class="nav-link" data-section="contact">
-                <span class="nav__index">04</span><span class="nav__text">Contact</span><span class="nav__arrow">↗</span>
+
+            <a
+                    href="#contact"
+                    class="nav-link"
+                    data-section="contact"
+            >
+                <span class="nav__index">04</span>
+                <span class="nav__text">Contact</span>
+                <span class="nav__arrow">↗</span>
             </a>
+
         </nav>
 
+
+        <!-- SIDEBAR FOOTER -->
         <div class="identity__footer">
+
             <span>BHARATPUR, NEPAL</span>
+
             <div class="identity__links">
-                <a href="https://github.com/Viwekk777" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://www.linkedin.com/in/bibek-lamsal-4b5446324" target="_blank" rel="noopener">LinkedIn</a>
+
+                <a
+                        href="https://github.com/Viwekk777"
+                        target="_blank"
+                        rel="noopener"
+                >
+                    GitHub
+                </a>
+
+                <a
+                        href="https://www.linkedin.com/in/bibek-lamsal-4b5446324"
+                        target="_blank"
+                        rel="noopener"
+                >
+                    LinkedIn
+                </a>
+
             </div>
+
         </div>
+
     </aside>
 
+
+    <!-- MAIN CONTENT -->
     <main class="content">
 
+
+        <!-- INTRO -->
         <section class="intro" id="intro">
-            <p class="eyebrow">Web developer, Nepal</p>
-            <h1>Full-Stack Web Developer | <strong>PHP</strong> & WordPress <strong></strong></h1>
-            <p class="lead">
 
-
-                Self-taught PHP developer building clean, custom web applications — from MVC-based backends to full booking systems — plus WordPress sites for clients who need a faster turnaround.
-
+            <p class="eyebrow">
+                Web developer, Nepal
             </p>
+
+            <h1>
+                Full-Stack Web Developer |
+                <strong>PHP</strong> & WordPress
+            </h1>
+
+            <p class="lead">
+                Self-taught PHP developer building clean, custom web applications
+                — from MVC-based backends to full booking systems — plus WordPress
+                sites for clients who need a faster turnaround.
+            </p>
+
         </section>
 
+
+        <!-- ABOUT -->
         <section id="about">
+
             <div class="section-heading">
+
                 <h2>About</h2>
-                <span class="section-number">01 / 04</span>
+
+                <span class="section-number">
+                    01 / 04
+                </span>
+
             </div>
+
 
             <div class="about__text">
-                <div class="about__text">
-                    <div class="about__text">
-                        <p>
-                            I am a self-taught web developer working with PHP, SQL, HTML, CSS, JavaScript, and WordPress. I develop custom PHP websites, database-driven applications, and WordPress websites, adapting the approach to the requirements of each project.
-                        </p>
-                        <p>
-                            My work includes building website features, managing databases, customizing WordPress themes and plugins, and developing practical solutions for businesses and individuals. I continue to improve my development skills through hands-on projects and learning.
-                        </p>
-                    </div>
-                </div>
+
+                <p>
+                    I am a self-taught web developer working with PHP, SQL, HTML,
+                    CSS, JavaScript, and WordPress. I develop custom PHP websites,
+                    database-driven applications, and WordPress websites, adapting
+                    the approach to the requirements of each project.
+                </p>
+
+                <p>
+                    My work includes building website features, managing databases,
+                    customizing WordPress themes and plugins, and developing
+                    practical solutions for businesses and individuals. I continue
+                    to improve my development skills through hands-on projects
+                    and learning.
+                </p>
+
             </div>
+
 
             <div class="stats">
+
                 <div class="stat">
-                    <span class="stat__value">20+</span>
-                    <span class="stat__label">Months, Web Dev</span>
+
+                    <span class="stat__value">
+                        20+
+                    </span>
+
+                    <span class="stat__label">
+                        Months, Web Dev
+                    </span>
+
                 </div>
+
+
                 <div class="stat">
-                    <span class="stat__value">PHP</span>
-                    <span class="stat__label">Primary language</span>
+
+                    <span class="stat__value">
+                        PHP
+                    </span>
+
+                    <span class="stat__label">
+                        Primary language
+                    </span>
+
                 </div>
+
+
                 <div class="stat">
-                    <span class="stat__value">WordPress</span>
-                    <span class="stat__label">Websites & WooCommerce</span>
+
+                    <span class="stat__value">
+                        WordPress
+                    </span>
+
+                    <span class="stat__label">
+                        Websites & WooCommerce
+                    </span>
+
                 </div>
+
             </div>
+
         </section>
 
+
+        <!-- SKILLS -->
         <section id="skills">
+
             <div class="section-heading">
+
                 <h2>Skills</h2>
-                <span class="section-number">02 / 04</span>
+
+                <span class="section-number">
+                    02 / 04
+                </span>
+
             </div>
+
 
             <div class="skills-grid">
+
+
+                <!-- BACKEND -->
                 <div class="skill-group">
-                    <h3>Backend</h3>
+
+                    <h3>
+                        Backend
+                    </h3>
+
                     <ul>
-                        <li>PHP<span class="skill-note">Custom MVC, PDO, no framework unless it's warranted</span></li>
-                        <li>MySQL<span class="skill-note">Schema design, transactions, query optimization</span></li>
-                        <li>REST APIs<span class="skill-note">Building and consuming JSON endpoints</span></li>
-                        <li>Composer / PSR-4<span class="skill-note">Autoloading, dependency injection</span></li>
+
+                        <li>
+                            PHP
+                            <span class="skill-note">
+                                Custom MVC, PDO, no framework unless it's warranted
+                            </span>
+                        </li>
+
+                        <li>
+                            MySQL
+                            <span class="skill-note">
+                                Schema design, transactions, query optimization
+                            </span>
+                        </li>
+
+                        <li>
+                            REST APIs
+                            <span class="skill-note">
+                                Building and consuming JSON endpoints
+                            </span>
+                        </li>
+
+                        <li>
+                            Composer / PSR-4
+                            <span class="skill-note">
+                                Autoloading, dependency injection
+                            </span>
+                        </li>
+
                     </ul>
+
                 </div>
+
+
+                <!-- FRONTEND -->
                 <div class="skill-group">
-                    <h3>Frontend</h3>
+
+                    <h3>
+                        Frontend
+                    </h3>
+
                     <ul>
-                        <li>HTML &amp; CSS<span class="skill-note">Responsive, no framework overhead</span></li>
-                        <li>JavaScript<span class="skill-note">DOM interactivity, fetch-based data flows</span></li>
-                        <li>WordPress<span class="skill-note">Secondary — fast turnaround client sites</span></li>
+
+                        <li>
+                            HTML &amp; CSS
+                            <span class="skill-note">
+                                Responsive, no framework overhead
+                            </span>
+                        </li>
+
+                        <li>
+                            JavaScript
+                            <span class="skill-note">
+                                DOM interactivity, fetch-based data flows
+                            </span>
+                        </li>
+
+                        <li>
+                            WordPress
+                            <span class="skill-note">
+                                Secondary — fast turnaround client sites
+                            </span>
+                        </li>
+
                     </ul>
+
                 </div>
+
+
+                <!-- TOOLS -->
                 <div class="skill-group">
-                    <h3>Tools</h3>
+
+                    <h3>
+                        Tools
+                    </h3>
+
                     <ul>
-                        <li>Git<span class="skill-note">Version control, deploy workflows</span></li>
-                        <li>LAMP<span class="skill-note">Linux Based Local development environment</span></li>
-                        <li>FTP / shared hosting<span class="skill-note">Deploying client sites</span></li>
+
+                        <li>
+                            Git
+                            <span class="skill-note">
+                                Version control, deploy workflows
+                            </span>
+                        </li>
+
+                        <li>
+                            LAMP
+                            <span class="skill-note">
+                                Linux based local development environment
+                            </span>
+                        </li>
+
+                        <li>
+                            FTP / shared hosting
+                            <span class="skill-note">
+                                Deploying client sites
+                            </span>
+                        </li>
+
                     </ul>
+
                 </div>
+
             </div>
+
         </section>
 
+
+        <!-- PROJECTS -->
         <section id="projects">
+
             <div class="section-heading">
+
                 <h2>Projects</h2>
-                <span class="section-number">03 / 04</span>
+
+                <span class="section-number">
+                    03 / 04
+                </span>
+
             </div>
+
 
             <article class="project">
-                <div class="project__image">
-                    <span class="project__glyph"><</span>
 
-                    <img class="project__image__img" src="/images/logo.png" alt="Project image" />
+
+                <!-- PROJECT IMAGE -->
+                <div class="project__image">
+
+                    <span class="project__glyph">
+                        &lt;
+                    </span>
+
+
+                    <!-- CLICKABLE PROJECT LOGO -->
+                    <a
+                            href="https://nepalstay.bibeklamsal.tech"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Open NepalStay live website"
+                            style="
+                            position: relative;
+                            z-index: 10;
+                            display: block;
+                            cursor: pointer;
+                        "
+                    >
+
+                        <img
+                                class="project__image__img"
+                                src="/images/logo.png"
+                                alt="NepalStay project logo"
+                        />
+
+                    </a>
+
                 </div>
+
+
+                <!-- PROJECT CONTENT -->
                 <div class="project__content">
-                    <h3>NepalStay</h3>
+
+                    <h3>
+                        NepalStay
+                    </h3>
+
                     <p>
-                        A full hotel booking platform built from scratch — custom MVC architecture, a PDO
-                        database layer, and a booking system with transaction-based double-booking
-                        protection. Handles room listings, guest bookings, and an admin panel for
-                        managing inventory.
+                        A full hotel booking platform built from scratch —
+                        custom MVC architecture, a PDO database layer, and a
+                        booking system with transaction-based double-booking
+                        protection. Handles room listings, guest bookings,
+                        and an admin panel for managing inventory.
                     </p>
+
+
                     <div class="project__tags">
-                        <span>PHP</span><span>MySQL</span><span>Custom MVC</span><span>JavaScript</span>
+
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Custom MVC</span>
+                        <span>JavaScript</span>
+
                     </div>
+
+
                     <div class="project__links">
-                        <a href="https://nepalstay.bibeklamsal.tech" target="_blank" rel="noopener">View live demo</a>
-                        <a href="https://github.com/Viwekk777/NepalStay" target="_blank" rel="noopener">Source code</a>
+
+                        <a
+                                href="https://nepalstay.bibeklamsal.tech"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                        >
+                            View live demo
+                        </a>
+
+                        <a
+                                href="https://github.com/Viwekk777/NepalStay"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                        >
+                            Source code
+                        </a>
+
                     </div>
+
                 </div>
+
             </article>
+
         </section>
 
+
+        <!-- CONTACT -->
         <section id="contact">
+
             <div class="section-heading">
+
                 <h2>Contact</h2>
-                <span class="section-number">04 / 04</span>
+
+                <span class="section-number">
+                    04 / 04
+                </span>
+
             </div>
+
 
             <div class="contact-grid">
+
+
                 <div class="contact-copy">
-                    <h3>Have a project or query for me ?</h3>
-                    <p>Send a message and I'll get back to you — usually within a day or two.</p>
+
+                    <h3>
+                        Have a project or query for me?
+                    </h3>
+
+                    <p>
+                        Send a message and I'll get back to you —
+                        usually within a day or two.
+                    </p>
+
                 </div>
 
-                <form class="contact-form" id="contactForm">
+
+                <!-- CONTACT FORM -->
+                <form
+                        class="contact-form"
+                        id="contactForm"
+                >
+
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required />
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                        />
+
                     </div>
+
+
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required />
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                        />
+
                     </div>
+
+
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                required
+                        ></textarea>
+
                     </div>
-                    <button type="submit"><span>Send message</span></button>
-                    <p class="form-status" id="formStatus" role="status"></p>
+
+
+                    <button type="submit">
+
+                        <span>
+                            Send message
+                        </span>
+
+                    </button>
+
+
+                    <p
+                            class="form-status"
+                            id="formStatus"
+                            role="status"
+                    ></p>
+
                 </form>
+
             </div>
+
         </section>
 
+
+        <!-- FOOTER -->
         <footer>
-            <p>© <span id="year"></span> Bibek. Built with plain HTML, CSS, and JS.</p>
-            <p><a href="#intro">Back to top ↑</a></p>
+
+            <p>
+                © <span id="year"></span> Bibek.
+                Built with plain HTML, CSS, and JS.
+            </p>
+
+            <p>
+                <a href="#intro">
+                    Back to top ↑
+                </a>
+            </p>
+
         </footer>
 
     </main>
+
 </div>
 
+
 <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Mobile nav toggle
-    const navToggle = document.getElementById('navToggle');
-    const spine = document.getElementById('spine');
+    /* YEAR */
+    document.getElementById('year').textContent =
+        new Date().getFullYear();
+
+
+    /* MOBILE NAVIGATION */
+    const navToggle =
+        document.getElementById('navToggle');
+
+    const spine =
+        document.getElementById('spine');
+
+
     navToggle.addEventListener('click', () => {
-        const isOpen = spine.classList.toggle('is-open');
-        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+        const isOpen =
+            spine.classList.toggle('is-open');
+
+        navToggle.setAttribute(
+            'aria-expanded',
+            isOpen ? 'true' : 'false'
+        );
+
     });
+
+
     document.querySelectorAll('.nav-link').forEach(link => {
+
         link.addEventListener('click', () => {
+
             spine.classList.remove('is-open');
-            navToggle.setAttribute('aria-expanded', 'false');
+
+            navToggle.setAttribute(
+                'aria-expanded',
+                'false'
+            );
+
         });
+
     });
 
-    // Active section highlight
-    const sections = ['about', 'skills', 'projects', 'contact'].map(id => document.getElementById(id));
-    const navLinks = document.querySelectorAll('.nav-link');
+
+    /* ACTIVE SECTION HIGHLIGHT */
+    const sections = [
+        'about',
+        'skills',
+        'projects',
+        'contact'
+    ].map(id =>
+        document.getElementById(id)
+    );
+
+
+    const navLinks =
+        document.querySelectorAll('.nav-link');
+
+
     const setActive = (id) => {
-        navLinks.forEach(l => l.classList.toggle('is-active', l.dataset.section === id));
-    };
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) setActive(entry.target.id);
+
+        navLinks.forEach(link => {
+
+            link.classList.toggle(
+                'is-active',
+                link.dataset.section === id
+            );
+
         });
-    }, { rootMargin: '-40% 0px -55% 0px' });
-    sections.forEach(s => s && observer.observe(s));
 
-    // Formspree Contact Form Integration
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-        e.preventDefault();
+    };
 
-        const status = document.getElementById('formStatus');
-        const form = this;
 
-        status.textContent = 'Sending message...';
-        status.className = 'form-status'; // Reset classes
+    const observer =
+        new IntersectionObserver(
+            (entries) => {
 
-        fetch('https://formspree.io/f/myezekee', {
-            method: 'POST',
-            body: new FormData(form),
-            headers: {
-                'Accept': 'application/json'
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+                        setActive(entry.target.id);
+                    }
+
+                });
+
+            },
+            {
+                rootMargin: '-40% 0px -55% 0px'
             }
-        })
-            .then(response => {
-                if (response.ok) {
-                    status.textContent = 'Message sent successfully! I will get back to you soon.';
-                    status.classList.add('is-success');
-                    form.reset();
-                } else {
-                    response.json().then(data => {
-                        if (Object.hasOwn(data, 'errors')) {
-                            status.textContent = data["errors"].map(error => error["message"]).join(", ");
-                        } else {
-                            status.textContent = 'Oops! There was a problem submitting your form.';
-                        }
-                        status.classList.add('is-error');
-                    })
-                }
-            })
-            .catch(error => {
-                status.textContent = 'Oops! There was a problem submitting your form.';
-                status.classList.add('is-error');
-            });
+        );
+
+
+    sections.forEach(section => {
+
+        if (section) {
+            observer.observe(section);
+        }
+
     });
+
+
+    /* FORMSPREE CONTACT FORM */
+    document
+        .getElementById('contactForm')
+        .addEventListener('submit', function (e) {
+
+            e.preventDefault();
+
+
+            const status =
+                document.getElementById('formStatus');
+
+            const form = this;
+
+
+            status.textContent =
+                'Sending message...';
+
+            status.className =
+                'form-status';
+
+
+            fetch(
+                'https://formspree.io/f/myezekee',
+                {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }
+            )
+
+                .then(response => {
+
+                    if (response.ok) {
+
+                        status.textContent =
+                            'Message sent successfully! I will get back to you soon.';
+
+                        status.classList.add(
+                            'is-success'
+                        );
+
+                        form.reset();
+
+                    } else {
+
+                        response.json().then(data => {
+
+                            if (
+                                Object.hasOwn(
+                                    data,
+                                    'errors'
+                                )
+                            ) {
+
+                                status.textContent =
+                                    data.errors
+                                        .map(error =>
+                                            error.message
+                                        )
+                                        .join(', ');
+
+                            } else {
+
+                                status.textContent =
+                                    'Oops! There was a problem submitting your form.';
+
+                            }
+
+                            status.classList.add(
+                                'is-error'
+                            );
+
+                        });
+
+                    }
+
+                })
+
+                .catch(() => {
+
+                    status.textContent =
+                        'Oops! There was a problem submitting your form.';
+
+                    status.classList.add(
+                        'is-error'
+                    );
+
+                });
+
+        });
+
 </script>
 
 </body>
