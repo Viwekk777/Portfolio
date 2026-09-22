@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="Style.css" />
-
 </head>
 <body>
 
@@ -27,8 +26,9 @@
     <aside class="spine" id="spine">
         <div class="identity">
             <div class="identity__image">
-                <span class="identity__initial">B</span>
-                <span class="identity__dot"></span>
+
+                <img class="identity__logo" src="/images/me.jpeg" alt="Bibek logo" />
+
             </div>
             <div class="identity__info">
                 <span class="identity__number">01 — PROFILE</span>
@@ -55,8 +55,8 @@
         <div class="identity__footer">
             <span>BHARATPUR, NEPAL</span>
             <div class="identity__links">
-                <a href="#" target="_blank" rel="noopener">GitHub</a>
-                <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/Viwekk777" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/bibek-lamsal-4b5446324" target="_blank" rel="noopener">LinkedIn</a>
             </div>
         </div>
     </aside>
@@ -64,12 +64,13 @@
     <main class="content">
 
         <section class="intro" id="intro">
-            <p class="eyebrow">Freelance developer, Nepal</p>
-            <h1>I build backends that don't need a <strong>framework</strong> to feel solid.</h1>
+            <p class="eyebrow">Web developer, Nepal</p>
+            <h1>Full-Stack Web Developer | <strong>PHP</strong> & WordPress <strong></strong></h1>
             <p class="lead">
-                Third-year Agriculture student in Chitwan, and a freelance PHP developer on the side.
-                I write plain PHP and MySQL by hand — no unnecessary dependencies — for people who
-                just need something that actually works.
+
+
+                Self-taught PHP developer building clean, custom web applications — from MVC-based backends to full booking systems — plus WordPress sites for clients who need a faster turnaround.
+
             </p>
         </section>
 
@@ -80,32 +81,30 @@
             </div>
 
             <div class="about__text">
-                <p>
-                    I'm currently studying BSc Agriculture at AFU Rampur, but most of my hours outside
-                    class go into freelance PHP work. I started by teaching myself the language from the
-                    ground up, and now build custom backends — booking systems, admin panels, small
-                    business tools — without leaning on a framework unless the project actually calls
-                    for one.
-                </p>
-                <p>
-                    Longer term, I'm working toward a career in penetration testing, starting with HTB
-                    Academy and working up to OSCP. Understanding how systems are built properly is part
-                    of why I care about writing clean backend code now.
-                </p>
+                <div class="about__text">
+                    <div class="about__text">
+                        <p>
+                            I am a self-taught web developer working with PHP, SQL, HTML, CSS, JavaScript, and WordPress. I develop custom PHP websites, database-driven applications, and WordPress websites, adapting the approach to the requirements of each project.
+                        </p>
+                        <p>
+                            My work includes building website features, managing databases, customizing WordPress themes and plugins, and developing practical solutions for businesses and individuals. I continue to improve my development skills through hands-on projects and learning.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="stats">
                 <div class="stat">
-                    <span class="stat__value">3rd</span>
-                    <span class="stat__label">Year, BSc Agriculture</span>
+                    <span class="stat__value">18+</span>
+                    <span class="stat__label">Months, Web Dev</span>
                 </div>
                 <div class="stat">
                     <span class="stat__value">PHP</span>
                     <span class="stat__label">Primary language</span>
                 </div>
                 <div class="stat">
-                    <span class="stat__value">Nepal</span>
-                    <span class="stat__label">Based in Bharatpur</span>
+                    <span class="stat__value">WordPress</span>
+                    <span class="stat__label">Websites & WooCommerce</span>
                 </div>
             </div>
         </section>
@@ -138,7 +137,7 @@
                     <h3>Tools</h3>
                     <ul>
                         <li>Git<span class="skill-note">Version control, deploy workflows</span></li>
-                        <li>XAMPP<span class="skill-note">Local development environment</span></li>
+                        <li>LAMP<span class="skill-note">Linux Based Local development environment</span></li>
                         <li>FTP / shared hosting<span class="skill-note">Deploying client sites</span></li>
                     </ul>
                 </div>
@@ -153,7 +152,9 @@
 
             <article class="project">
                 <div class="project__image">
-                    <span class="project__glyph">NS</span>
+                    <span class="project__glyph"><</span>
+
+                    <img class="project__image__img" src="/images/logo.png" alt="Project image" />
                 </div>
                 <div class="project__content">
                     <h3>NepalStay</h3>
@@ -167,8 +168,8 @@
                         <span>PHP</span><span>MySQL</span><span>Custom MVC</span><span>JavaScript</span>
                     </div>
                     <div class="project__links">
-                        <a href="#" target="_blank" rel="noopener">View live demo</a>
-                        <a href="#" target="_blank" rel="noopener">Source code</a>
+                        <a href="https://nepalstay.bibeklamsal.tech" target="_blank" rel="noopener">View live demo</a>
+                        <a href="https://github.com/Viwekk777/NepalStay" target="_blank" rel="noopener">Source code</a>
                     </div>
                 </div>
             </article>
@@ -182,7 +183,7 @@
 
             <div class="contact-grid">
                 <div class="contact-copy">
-                    <h3>Have a project that needs a solid backend?</h3>
+                    <h3>Have a project or query for me ?</h3>
                     <p>Send a message and I'll get back to you — usually within a day or two.</p>
                 </div>
 
@@ -243,13 +244,43 @@
     }, { rootMargin: '-40% 0px -55% 0px' });
     sections.forEach(s => s && observer.observe(s));
 
-    // Contact form (front-end only demo — no backend endpoint configured)
+    // Formspree Contact Form Integration
     document.getElementById('contactForm').addEventListener('submit', function (e) {
         e.preventDefault();
+
         const status = document.getElementById('formStatus');
-        status.textContent = 'Thanks — this form is a front-end demo, so nothing was sent yet. Wire it up to your backend or a form service to go live.';
-        status.classList.add('is-success');
-        this.reset();
+        const form = this;
+
+        status.textContent = 'Sending message...';
+        status.className = 'form-status'; // Reset classes
+
+        fetch('https://formspree.io/f/myezekee', {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+            .then(response => {
+                if (response.ok) {
+                    status.textContent = 'Message sent successfully! I will get back to you soon.';
+                    status.classList.add('is-success');
+                    form.reset();
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.textContent = data["errors"].map(error => error["message"]).join(", ");
+                        } else {
+                            status.textContent = 'Oops! There was a problem submitting your form.';
+                        }
+                        status.classList.add('is-error');
+                    })
+                }
+            })
+            .catch(error => {
+                status.textContent = 'Oops! There was a problem submitting your form.';
+                status.classList.add('is-error');
+            });
     });
 </script>
 
